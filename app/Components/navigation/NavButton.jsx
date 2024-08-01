@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import clsx from "clsx";
 import {
-  Home,
   User,
   Palette,
   Phone,
@@ -10,14 +9,15 @@ import {
   Linkedin,
   Twitter,
   NotebookText,
+  BookAudioIcon,
 } from "lucide-react";
 import { ResPonsiveComponent } from "../ResPonsiveComponent";
 import {motion} from "framer-motion";
 
 const getIcon = (icon) => {
   switch (icon) {
-    case "home":
-      return <Home className="w-full h-auto" strokeWidth={1.5} />;
+    case "codolio":
+      return <BookAudioIcon className="w-full h-auto" strokeWidth={1.5} />;
     case "about":
       return <User className="w-full h-auto" strokeWidth={1.5} />;
     case "projects":
